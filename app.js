@@ -1,7 +1,11 @@
 const input = document.getElementById('input') //input 
 const numbers = document.getElementById('numbers') //secction que contiene los numeros
+const suma = document.getElementById('suma')
+const resta = document.getElementById('resta')
+const multiplicacion = document.getElementById('multiplicacion')
+const division = document.getElementById('division')
 
-const handleClick = () => {}
+//const handleClick = () => {}
 
 /*ok, esto tampoco lo sabia, acabo de descubbrir que si le colocas el add event listener 
 a una zona grande se puede acceder o todo lo que contiene (en este caso en un section)
@@ -23,5 +27,18 @@ console.log del evento te daras cuenta de todas las propiedades que posee*/
 // en un proyecto profesional esta mal visto
 //como es de practica puedes hacerlo asi 
 //solo borralos para hacer merge
-console.log(input1)
+console.log(input)
+suma.addEventListener("click",(s) =>{
+     let i = 0, num1, num2;
+     if(i==0){
+          num1 = parseInt(input.value)
+     }
+     if(i>0){
+          num2 = parseInt(input.value)
+          s = num1 + num2;
+          input.value = s
+     }
+     i++
 
+     
+})
