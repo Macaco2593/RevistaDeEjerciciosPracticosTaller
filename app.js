@@ -29,16 +29,21 @@ console.log del evento te daras cuenta de todas las propiedades que posee*/
 //solo borralos para hacer merge
 console.log(input)
 suma.addEventListener("click",(s) =>{
-     let i = 0, num1, num2;
-     if(i==0){
-          num1 = parseInt(input.value)
-     }
-     if(i>0){
+     console.log("logica suma")
+     let num1 = parseInt(input.value);
+     let num2;
+     let adicion;
+     input.value = ("")
+     console.log({num1});
+     
+     
+     console.log(input)
+     console.log(input.target)
+     console.log(s.target, s, 'este es el evento')
+     if(num1){
           num2 = parseInt(input.value)
-          s = num1 + num2;
-          input.value = s
+          adicion = num1 + num2;
+          input.value = adicion
      }
-     i++
-
      
 })
