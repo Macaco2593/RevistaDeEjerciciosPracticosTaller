@@ -4,6 +4,7 @@ const suma = document.getElementById('suma')
 const resta = document.getElementById('resta')
 const multiplicacion = document.getElementById('multiplicacion')
 const division = document.getElementById('division')
+const resultado = document.getElementById('resultado')
 
 //const handleClick = () => {}
 
@@ -28,22 +29,32 @@ console.log del evento te daras cuenta de todas las propiedades que posee*/
 //como es de practica puedes hacerlo asi 
 //solo borralos para hacer merge
 console.log(input)
-suma.addEventListener("click",(s) =>{
+
+let adicion=0, sustraccion=0, result=0;
+
+suma.addEventListener("click",() =>{
      console.log("logica suma")
-     let num1 = parseInt(input.value);
-     let num2;
-     let adicion;
-     input.value = ("")
-     console.log({num1});
-     
-     
-     console.log(input)
-     console.log(input.target)
-     console.log(s.target, s, 'este es el evento')
-     if(num1){
-          num2 = parseInt(input.value)
-          adicion = num1 + num2;
-          input.value = adicion
-     }
-     
+
+          adicion = adicion + parseInt(input.value);
+          console.log({adicion});
+          result = adicion
+          console.log({result});
+          input.value = ("")
+
+     // console.log(input)
+     // console.log(input.target)
+     // console.log(s.target, s, 'este es el evento')
 })
+
+resta.addEventListener("click", () =>{
+     console.log("logica resta")
+
+     sustraccion = result - parseInt(input.value);
+     console.log({sustraccion});
+     result = sustraccion;
+     console.log({result})
+     input.value = ("")
+})
+ resultado.addEventListener("click",()=>{
+      input.value = result
+ })
