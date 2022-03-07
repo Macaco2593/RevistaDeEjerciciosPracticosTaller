@@ -14,24 +14,34 @@ numbers.addEventListener("click",(e) =>{
 })
 
 
-let number=0,adicion=0, sustraccion=0, result=0;
+let number=0,operacion, result=0;
      
 suma.addEventListener("click",() =>{
           number = parseInt(input.value);
-          adicion = number + parseInt(input.value); // No se me ocurre nada aqui, para hacer una pausa y pedir otro numero, despues de eso sigo con la resta
-          result = adicion
+          operacion = "+";
           input.value = ("")
 })
 
 resta.addEventListener("click", () =>{
-     number = number + parseInt(input.value);
-     sustraccion = result - parseInt(input.value);
-     result = sustraccion;
+     number = parseInt(input.value);
+     operacion = "-";
      input.value = ("")
 })
  resultado.addEventListener("click",()=>{
+      result = parseInt(input.value)
+      switch(operacion){
+           case "+":
+               result = parseInt(number) + parseInt(result)
+               break;
+          case "-":
+               result = parseInt(number) - parseInt(result)
+               break;
+      }
       input.value = result
  })
  borrar.addEventListener("click",()=>{
      document.getElementById('input').value = ""
+     number = 0;
+     operacion = 0;
+     result = 0;
 })
