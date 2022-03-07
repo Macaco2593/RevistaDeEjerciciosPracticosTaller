@@ -27,7 +27,19 @@ resta.addEventListener("click", () =>{
      operacion = "-";
      input.value = ("")
 })
- resultado.addEventListener("click",()=>{
+multiplicacion.addEventListener("click", () =>{
+     number = parseInt(input.value);
+     operacion = "*";
+     input.value = ("")
+})
+
+division.addEventListener("click", () =>{
+     number = parseInt(input.value);
+     operacion = "/";
+     input.value = ("")
+})
+
+resultado.addEventListener("click",()=>{
       result = parseInt(input.value)
       switch(operacion){
            case "+":
@@ -36,6 +48,12 @@ resta.addEventListener("click", () =>{
           case "-":
                result = parseInt(number) - parseInt(result)
                break;
+          case "*":
+               result = parseInt(number) * parseInt(result)
+               break;
+          case "/":
+               result = parseInt(number) / parseInt(result)   
+               break;  
       }
       input.value = result
  })

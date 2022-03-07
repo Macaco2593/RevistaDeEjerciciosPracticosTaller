@@ -1,0 +1,50 @@
+body {
+    background-color: bisque;
+    margin: 0;
+}
+
+#design {
+    display:inline-block;
+    justify-content: center;
+    margin: 200px;
+    height: 220px;
+    text-align: center;
+    background-color: brown;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+
+.numberInput {
+    height: 30px;
+    width: 30px;
+}
+#multiplicacion {
+    height: 30px;
+    width: 30px;
+}
+
+#division {
+    height: 30px;
+    width: 30px;
+}
+
+#suma {
+    height: 30px;
+    width: 30px;
+}
+
+#resta {
+    height: 30px;
+    width: 30px;
+}
+
+#resultado {
+    height: 30px;
+    width: 30px;
+}
+
+#borrar {
+    height: 30px;
+    width: 30px;
+}
