@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"> 
     <title>Document</title>
 </head>
 <body>
-    <section> <input type="number" name="entrada2" id="input" placeholder="Escribe un numero"></section>
-    <section id="numbers">
-    <input type="button" value="1" class="numberInput">
-    <input type="button" value="2" class="numberInput">
-    <input type="button" value="3" class="numberInput">
-    <input type="button" value="4" class="numberInput">
-    <input type="button" value="5" class="numberInput">
-    <input type="button" value="6" class="numberInput">
-    <input type="button" value="7" class="numberInput">
-    <input type="button" value="8" class="numberInput">
-    <input type="button" value="9" class="numberInput">
-    <input type="button" value="0" class="numberInput">
-</section>
-    <section> 
-        <input type="button" value="Suma" id="suma"> <br>
-        <input type="button" value="Resta" id="resta"> <br>
-        <input type="button" value="Multiplicacion" id="multiplicacion"> <br>
-        <input type="button" value="Division" id="division">
-        <input type="button" value="Resultado" id="resultado">
-    </section>
+    <div id="design">
+    <section> <input type="number" name="entrada2" id="input" placeholder="Pulsa un numero"></section><br>
+    <div id="calculadora">
+        <div id="numbers">
+            <input type="button" value="1" class="numberInput">
+            <input type="button" value="2" class="numberInput">
+            <input type="button" value="3" class="numberInput">
+            <input type="button" value="+" id="suma"> <br>
+        <br>
+            <input type="button" value="4" class="numberInput">
+            <input type="button" value="5" class="numberInput">
+            <input type="button" value="6" class="numberInput">
+            <input type="button" value="-" id="resta"> <br>
+        <br>
+            <input type="button" value="7" class="numberInput">
+            <input type="button" value="8" class="numberInput">
+            <input type="button" value="9" class="numberInput">
+            <input type="button" value="*" id="multiplicacion"><br>
+        <br>
+            <input type="button" value="/" id="division">
+            <input type="button" value="0" class="numberInput">
+            <input type="button" value="=" id="resultado">
+            <input type="button" value="C" id="borrar">
+        </div>    
+    </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
