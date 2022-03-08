@@ -7,7 +7,7 @@ body {
     display:inline-block;
     justify-content: center;
     margin: 200px;
-    height: 220px;
+    height: 250px;
     text-align: center;
     background-color: brown;
     border-radius: 10px;
@@ -16,35 +16,43 @@ body {
 }
 
 .numberInput {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
 }
 #multiplicacion {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
 }
 
 #division {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
 }
 
 #suma {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
 }
 
 #resta {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
 }
 
 #resultado {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
 }
 
 #borrar {
+    height: 35px;
+    width: 35px;
+}
+
+#input {
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
     height: 30px;
-    width: 30px;
+    font-family: Arial, Helvetica, sans-serif
 }

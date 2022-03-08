@@ -1,5 +1,5 @@
-const input = document.getElementById('input') //input 
-const numbers = document.getElementById('numbers') //secction que contiene los numeros
+const input = document.getElementById('input') 
+const numbers = document.getElementById('numbers') 
 const suma = document.getElementById('suma')
 const resta = document.getElementById('resta')
 const multiplicacion = document.getElementById('multiplicacion')
@@ -60,6 +60,5 @@ resultado.addEventListener("click",()=>{
  borrar.addEventListener("click",()=>{
      document.getElementById('input').value = ""
      number = 0;
-     operacion = 0;
      result = 0;
 })
