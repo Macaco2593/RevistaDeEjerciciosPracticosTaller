@@ -14,8 +14,7 @@ numbers.addEventListener("click",(e) =>{
 })
 
 
-let number=0,operacion, result=0;
-     
+/*let number=0,operacion, result=0;
 suma.addEventListener("click",() =>{
           number = parseInt(input.value);
           operacion = "+";
@@ -56,9 +55,29 @@ resultado.addEventListener("click",()=>{
                break;  
       }
       input.value = result
- })
+ }) */
+
+ suma.addEventListener("click",() =>{
+     input.value = input.value + suma.value
+})
+
+resta.addEventListener("click",() =>{
+     input.value = input.value + resta.value
+})
+
+multiplicacion.addEventListener("click",() =>{
+     input.value = input.value + multiplicacion.value
+})
+
+division.addEventListener("click",() =>{
+     input.value = input.value + division.value
+})
+
+resultado.addEventListener("click",()=>{
+     input.value = eval(input.value)
+})
  borrar.addEventListener("click",()=>{
-     document.getElementById('input').value = ""
-     number = 0;
-     result = 0;
+     input.value = ""
+     /*number = 0;
+     result = 0;*/
 })

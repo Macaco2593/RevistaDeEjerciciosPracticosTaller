@@ -15,36 +15,7 @@ body {
     box-shadow: 15px 10px 0px 5px #00000033;
 }
 
-.numberInput {
-    height: 35px;
-    width: 35px;
-}
-#multiplicacion {
-    height: 35px;
-    width: 35px;
-}
-
-#division {
-    height: 35px;
-    width: 35px;
-}
-
-#suma {
-    height: 35px;
-    width: 35px;
-}
-
-#resta {
-    height: 35px;
-    width: 35px;
-}
-
-#resultado {
-    height: 35px;
-    width: 35px;
-}
-
-#borrar {
+.operador, .numberInput {
     height: 35px;
     width: 35px;
 }
